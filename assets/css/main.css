@@ -95,7 +95,7 @@ body {
   justify-content: space-evenly;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
+  align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   -webkit-box-orient: vertical;
@@ -103,7 +103,8 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   padding: 15px;
-  text-align: center;
+  text-align: left;
+  margin-left: 250px;
 }
 
 .landing .img {
@@ -112,7 +113,7 @@ body {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -461,9 +462,11 @@ body {
 .contact-me {
   margin-top: 3rem;
 }
+
 .contact-me h2 {
   margin-bottom: 1.5rem;
 }
+
 .contact-me button {
   margin-top: 2rem;
   width: 50vw;
@@ -471,9 +474,54 @@ body {
   background: #24a0ed;
   transform: scale(1);
 }
+
 .contact-me button:active {
   transform: scale(1.1);
 }
+
+.contact-sidebar {
+  position: fixed;
+  top: 40%;
+  right: 10px;
+  transform: translateY(-50%);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  transform: none;
+  padding: 0;
+}
+
+.icon-circle i {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.icon-circle:hover {
+  transform: scale(1.1);
+  background-color: #f53f2b;
+}
+
+.icon-circle:hover i {
+  color: white;
+}
+
 
 .social {
   margin: 0 auto;
