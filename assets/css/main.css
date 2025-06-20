@@ -511,6 +511,12 @@ body {
   color: #333;
   margin: 0;
   padding: 0;
+  line-height: 1;        /* Giảm khả năng icon bị lệch do line-height */
+  display: flex;         /* Dùng flex để đảm bảo icon căn giữa */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .icon-circle:hover {
