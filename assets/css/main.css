@@ -43,14 +43,17 @@
   filter: drop-shadow(5px 18px 18px rgba(236, 66, 66, 0.904));
 }
 body {
-  
   background-image: url('../img/white_bg.jpg');
+  background-repeat: no-repeat;       
+  background-size: cover;             
+  background-position: center;        
+  background-attachment: fixed;       
   width: 99vw;
   max-width: 100% !important;
-  cursor: url("https://cdn.custom-cursor.com/db/6102/32/color-lush-lava-cursor.png"),
-    auto;
+  cursor: url("https://cdn.custom-cursor.com/db/6102/32/color-lush-lava-cursor.png"), auto;
   overflow-x: hidden;
 }
+
 
 ::-webkit-scrollbar {
   width: 15px;
@@ -104,7 +107,7 @@ body {
   flex-direction: column;
   padding: 15px;
   text-align: left;
-  margin-left: 250px;
+  margin-left: 230px;
 }
 
 .landing .img {
@@ -118,7 +121,8 @@ body {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
+  margin-left: 10px;
 }
 
 .landing .img img {
@@ -201,6 +205,7 @@ body {
     -5px -5px 30px #ffffffbb, inset -5px -5px 10px #0000000c;
   box-shadow: 5px 5px 30px #dddada, inset -5px -5px 10px #0000000c,
     -5px -5px 30px #ffffffbb, inset -5px -5px 10px #0000000c;
+  background-color: white;
 }
 
 #typed {
@@ -286,6 +291,7 @@ body {
   flex-wrap: wrap;
   line-height: 1.6;
   padding-bottom: 20px;
+  background-color: white;
 }
 
 .about .card-wrapper .box1 .resume {
@@ -504,6 +510,7 @@ body {
   text-decoration: none;
   transform: none;
   padding: 0;
+  background-color: white
 }
 
 .icon-circle i {
@@ -723,4 +730,21 @@ footer .person1 {
 .up-arrow {
   width: 3rem;
   height: 3rem;
+}
+.robot {
+  width: 60vh;
+  height: 60vh;
+  position: absolute;
+  top: 10px;      /* kéo lên trên */
+  right: 130px;    /* nằm mé bên phải */
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.robot iframe, .robot canvas, .robot img {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
