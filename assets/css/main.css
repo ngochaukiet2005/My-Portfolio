@@ -728,6 +728,7 @@ footer .person1 {
   right: 0.5%;
   bottom: 3%;
   cursor: pointer;
+  mix-blend-mode: multiply;
 }
 
 .up-arrow {
@@ -737,6 +738,7 @@ footer .person1 {
 .robot {
   width: 60vh;
   height: 60vh;
+  overflow: visible;
   position: absolute;
   top: 10px;      
   right: 130px;   
@@ -790,4 +792,23 @@ html, body {
 .animated-image {
   transition: transform 0.4s ease-in-out;
 }
+.walking-gif {
+  position: fixed;
+  top: 0px;
+  left: -200px;
+  width: 120px;
+  height: auto;
+  z-index: 1000;
+  animation: walkAcross 20s linear infinite;
+  pointer-events: none;
+  mix-blend-mode: multiply;
+}
 
+@keyframes walkAcross {
+  0% {
+    left: -200px;
+  }
+  100% {
+    left: 100%;
+  }
+}
